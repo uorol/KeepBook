@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+ 
+    <TableRow>
+        <TextView
+            android:text="@string/title"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/title_text"
+            android:hint="@string/enter_title"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+    <TableRow>
+		<ToggleButton 
+		    android:id="@+id/direct_toggle_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textOn="@string/direct_rent"
+		    android:textOff="@string/direct_borrow"
+		    android:onClick="onToggleClicked"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/content"
+            android:layout_height="200sp"
+            android:layout_gravity="center_vertical"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/content_text"
+            android:hint="@string/enter_content"
+            android:layout_gravity="top"
+            android:layout_height="200sp"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:gravity="top|left"
+            android:textAppearance="?android:attr/textAppearanceMedium" /> 
+    </TableRow>
+    <TableRow>
+		<ToggleButton 
+		    android:id="@+id/clear_toggle_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textOn="@string/clear_yes"
+		    android:textOff="@string/clear_no"
+		    android:onClick="onToggleClicked"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/date_text"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/date_data"
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </TableRow>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+         <TableRow>
+             <ImageButton 
+                 android:id="@+id/take_picture"
+                 android:src="@android:drawable/ic_menu_camera"
+                 android:onClick="clickFunction" />
+             <ImageButton
+                 android:id="@+id/record_sound"
+                 android:src="@android:drawable/ic_btn_speak_now"
+                 android:onClick="clickFunction" />
+             <ImageButton 
+                 android:id="@+id/set_location"
+                 android:src="@android:drawable/ic_menu_mylocation"
+                 android:onClick="clickFunction" />
+             <ImageButton 
+                 android:id="@+id/set_date"
+                 android:src="@android:drawable/ic_menu_month"
+                 android:onClick="clickFunction" />
+             <ImageButton 
+                 android:id="@+id/select_color"
+                 android:src="@android:drawable/ic_menu_edit"
+                 android:onClick="clickFunction" />
+         </TableRow>
+    </TableLayout>
+ 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow>        
+            <Button
+                android:id="@+id/cancel_item"
+                android:text="@android:string/cancel"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+            <Button
+                android:id="@+id/ok_item"
+                android:text="@android:string/ok"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+            android:layout_margin="2sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+ 
+</TableLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KeepBook</string>
+    <string name="app_title">豆虎記帳!</string>
+    <string name="about">這是豆虎記帳!</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title">標題</string>
+    <string name="date_text">日期</string>
+    <string name="enter_title">輸入標題</string>
+    <string name="content">內容</string>
+    <string name="enter_content">輸入內容</string>
+    <string name="delete">刪除</string>
+    <string name="delete_item">刪除項目</string>
+    <string name="yes">確定</string>
+    <string name="direct_rent">借出</string>
+    <string name="direct_borrow">欠債</string>
+    <string name="clear_yes">結清</string>
+    <string name="clear_no">未結</string>
+    <string name="title_activity_colors">Colors</string>
+    <string name="version">測試 Alpha</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+
+</resources>
